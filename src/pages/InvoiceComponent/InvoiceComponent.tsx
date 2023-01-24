@@ -2,7 +2,7 @@ import { InvoiceComponentHeader, Invoices } from "../../components";
 
 const InvoiceComponent = () => {
     return (
-        <div>
+        <div className={'mt-[74px]'}>
             <InvoiceComponentHeader />
             <Invoices />
         </div>

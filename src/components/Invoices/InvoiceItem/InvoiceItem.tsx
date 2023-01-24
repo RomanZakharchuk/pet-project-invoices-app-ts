@@ -2,7 +2,7 @@ import { ArrowRightSvg } from "../../../svg-components";
 
 const InvoiceItem = () => {
     return (
-        <div className={'flex justify-between items-center bg-white rounded-[8px] shadow-invoice-item px-[32px] py-[16px] cursor-pointer'}>
+        <div className={'w-full flex justify-between items-center bg-white rounded-[8px] shadow-invoice-item px-[32px] py-[16px] cursor-pointer'}>
             <div>
                 <span className={'h4 text-ship-cove'}>#</span>
                 <span className={'h4 text-vulcan'}>RT3080</span>

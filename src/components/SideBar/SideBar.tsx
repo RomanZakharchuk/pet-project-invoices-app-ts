@@ -3,7 +3,7 @@ import { SidebarThemeSwitcherAndUserIcon } from "./SidebarThemeSwitcherAndUserIc
 
 const SideBar = () => {
     return (
-        <div className={'h-screen flex flex-col justify-between al bg-oxford-blue overflow-hidden rounded-r-[20px]'}>
+        <div className={'h-screen flex flex-col justify-between al bg-oxford-blue overflow-hidden rounded-r-[20px] relative z-[1]'}>
             <SidebarLogo />
             <SidebarThemeSwitcherAndUserIcon />
         </div>
