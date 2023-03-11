@@ -1,0 +1,10 @@
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+@use "src/scss/colors";
+
+.Title {
+  @include fontWight.bold();
+  @include fontSize.h2Big();
+  color: colors.$vulcan;
+  margin-bottom: 24px;
+}

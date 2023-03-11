@@ -1,0 +1,29 @@
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+@use "src/scss/colors";
+
+.Calendar {
+  width: 47%;
+}
+
+.Label {
+  display: inline-block;
+  @include fontWight.medium();
+  @include fontSize.text();
+  color: colors.$ship-cove;
+  margin-bottom: 10px;
+}
+
+.CalendarBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid colors.$selago;
+  border-radius: 4px;
+  padding: 16px 20px;
+
+  @include fontWight.bold();
+  @include fontSize.h4();
+  color: colors.$vulcan;
+  cursor: pointer;
+}

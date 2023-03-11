@@ -1,0 +1,14 @@
+@use "src/scss/colors";
+
+.SideBar {
+  width: 103px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: colors.$oxford-blue;
+  overflow: hidden;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  z-index: 1;
+}

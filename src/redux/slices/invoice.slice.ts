@@ -1,6 +1,5 @@
 import { IInvoice } from "../../interfaces/invoice.interface";
 import { createSlice } from "@reduxjs/toolkit";
-import { dataInvoices } from "../../mockData/data.invoices";
 
 interface IState {
     invoices: IInvoice[];

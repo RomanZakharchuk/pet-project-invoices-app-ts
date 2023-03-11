@@ -1,0 +1,66 @@
+@use "src/scss/colors";
+@use "src/scss/boxShadow";
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+
+.InvoiceItem {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: colors.$white;
+  border-radius: 8px;
+  @include boxShadow.boxShadow();
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.InvoiceIdBlock {
+  @include fontWight.bold();
+  @include fontSize.text();
+
+  &:nth-of-type(1) {
+    color: colors.$ship-cove;
+  }
+
+  &:nth-of-type(2) {
+    color: colors.$vulcan;
+  }
+}
+
+.InvoiceDate,
+.InvoiceUserName {
+  @include fontWight.medium();
+  @include fontSize.text();
+  color: colors.$ship-cove;
+}
+
+.InvoicePrice {
+  @include fontWight.bold();
+  @include fontSize.h3();
+  color: colors.$vulcan;
+}
+
+.InvoicePaymentStatusBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: colors.$shamrock-opacity;
+  mix-blend-mode: normal;
+  border-radius: 6px;
+  padding: 13px 30px;
+
+  &:nth-of-type(1) {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: colors.$shamrock;
+    margin-right: 8px;
+  }
+
+  &:nth-of-type(2) {
+    @include fontWight.bold();
+    @include fontSize.text();
+    color: colors.$shamrock;
+  }
+}

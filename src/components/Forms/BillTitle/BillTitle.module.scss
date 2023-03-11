@@ -1,0 +1,10 @@
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+@use "src/scss/colors";
+
+.BillTitle {
+  @include fontWight.bold();
+  @include fontSize.h4();
+  color: colors.$cornflower-blue;
+  margin-bottom: 24px;
+}

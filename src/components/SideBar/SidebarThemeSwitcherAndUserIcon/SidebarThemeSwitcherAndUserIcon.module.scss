@@ -1,0 +1,57 @@
+@use "src/scss/btn";
+@use "src/scss/colors";
+
+.WrapperBtn {
+  text-align: center;
+}
+
+.BtnLogOut {
+  display: inline-block;
+  @include btn.btnSmaller();
+  background: colors.$cornflower-blue;
+  color: colors.$white;
+  border: none;
+  transition: all 1.75ms ease-in-out;
+
+  &:hover {
+    background: colors.$heliotrope;
+    transition: all 1.75ms ease-in-out;
+  }
+}
+
+.SwitchThemeBlock {
+  width: 100%;
+  height: 103px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Switch {
+  line-height: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.Line {
+  width: 100%;
+  height: 1px;
+  background: colors.$fiord;
+}
+
+.AvatarBlock {
+  width: 100%;
+  height: 103px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: colors.$selago;
+    overflow: hidden;
+  }
+}

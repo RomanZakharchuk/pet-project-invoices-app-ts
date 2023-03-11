@@ -1,4 +1,9 @@
-.Container {
+@use "src/scss/colors";
+
+.Dashboard {
   height: 100vh;
   display: flex;
+  background: colors.$whisper;
+  overflow: hidden;
+  position: relative;
 }

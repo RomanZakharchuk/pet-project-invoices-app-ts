@@ -1,0 +1,10 @@
+@use "../../../scss/fontWight";
+@use "../../../scss/fontSize";
+@use "../../../scss/colors";
+
+.ErrorMessage {
+  @include fontWight.semiBold();
+  @include fontSize.textSmaller();
+  color: colors.$burnt-sienna;
+  margin-top: 2px;
+}

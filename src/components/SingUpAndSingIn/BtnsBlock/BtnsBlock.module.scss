@@ -1,0 +1,25 @@
+@use "../../../scss/btn";
+@use "../../../scss/colors";
+
+.Container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Btn,
+.Link {
+  width: 131px;
+  @include btn.btn();
+  background: colors.$cornflower-blue;
+  color: colors.$white;
+  transition: all 1.75ms ease-in-out;
+
+  &:hover {
+    background: colors.$heliotrope;
+    transition: all 1.75ms ease-in-out;
+  }
+}
+
+.Link {
+  text-align: center;
+}

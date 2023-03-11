@@ -1,11 +1,13 @@
-import React from 'react';
-import { PacManSvg } from "../../../svg-components";
+import { FC } from 'react';
 
-const SidebarLogo = () => {
+import style from './SidebarLogo.module.scss';
+import { PacManSvg } from "../../icons";
+
+const SidebarLogo: FC = () => {
     return (
-        <div className={'h-[103px] w-[103px] flex justify-center items-center bg-cornflower-blue overflow-hidden rounded-br-[20px] relative'}>
+        <div className={style.SidebarLogo}>
             <PacManSvg />
-            <div className={'absolute w-full h-[50px] bg-heliotrope rounded-tl-[20px] z-[1] bottom-0'}></div>
+            <div />
         </div>
     );
 };

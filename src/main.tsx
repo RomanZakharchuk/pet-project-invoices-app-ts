@@ -5,6 +5,7 @@ import { App } from './App';
 import './index.css';
 import { Provider } from "react-redux";
 import { setupStore } from "./redux/store";
+import './services/firebase';
 
 const store = setupStore();
 

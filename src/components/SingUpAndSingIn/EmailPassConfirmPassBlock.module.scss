@@ -1,0 +1,46 @@
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+@use "src/scss/colors";
+
+.LabelContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.Label {
+  @include fontWight.medium();
+  @include fontSize.text();
+  color: colors.$ship-cove;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.ErrorMessage {
+  @include fontWight.medium();
+  @include fontSize.text();
+  color: colors.$burnt-sienna;
+  margin-bottom: 10px;
+}
+
+.Input {
+  display: block;
+  @include fontWight.bold();
+  @include fontSize.text();
+  color: colors.$vulcan;
+  padding: 17px 20px;
+  border: 1px solid colors.$selago;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  transition: all 1.75ms ease-in-out;
+
+  &:hover {
+    border: 1px solid colors.$heliotrope;
+    transition: all 1.75ms ease-in-out;
+  }
+
+  &:focus {
+    border: 1px solid colors.$heliotrope;
+  }
+}

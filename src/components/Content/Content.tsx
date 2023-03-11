@@ -1,8 +1,10 @@
 import { Outlet } from "react-router-dom";
 
+import style from './Content.module.scss';
+
 const Content = () => {
     return (
-        <div className={'w-[720px] mx-auto h-screen'}>
+        <div className={style.Content}>
             <Outlet />
         </div>
     );

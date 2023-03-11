@@ -1,0 +1,1 @@
+export { ConfirmPasswordBlock } from './ConfirmPasswordBlock';

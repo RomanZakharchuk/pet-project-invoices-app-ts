@@ -1,0 +1,36 @@
+@use "src/scss/colors";
+@use "src/scss/btn";
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+
+.CreateInvoiceBtnGroup {
+  width: 100%;
+  background: colors.$white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 56px 0 159px;
+}
+
+.BtnDiscard {
+  @include btn.btn();
+  background: colors.$selago2;
+
+  @include fontWight.bold();
+  @include fontSize.text();
+  color: colors.$ship-cove;
+  transition: all 1.5s ease-in-out;
+
+  &:hover {
+    background: colors.$selago;
+    transition: all 1.5s ease-in-out;
+  }
+}
+
+.BtnsSaveBlock {
+  display: flex;
+  align-items: center;
+}

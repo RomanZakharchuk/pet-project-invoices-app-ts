@@ -1,0 +1,13 @@
+@use "src/scss/colors";
+@use "src/scss/boxShadow";
+
+.FilterModalWindow {
+  position: absolute;
+  top: 37px;
+  left: -50px;
+  width: 192px;
+  background: colors.$white;
+  @include boxShadow.boxShadow();
+  border-radius: 8px;
+  padding: 24px;
+}

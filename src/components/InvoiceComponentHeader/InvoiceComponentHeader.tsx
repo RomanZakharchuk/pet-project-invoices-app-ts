@@ -1,11 +1,14 @@
-import { InvoiceHeaderTitle } from "./InvoiceHeaderTitle/InvoiceHeaderTitle";
-import { InvoiceFilterAndAddInvoice } from "./InvoiceFilterAndAddInvoice/InvoiceFilterAndAddInvoice";
+import { FC } from "react";
 
-const InvoiceComponentHeader = () => {
+import style from './InvoiceComponentHeader.module.scss';
+import { InvoiceHeaderTitle } from "./InvoiceHeaderTitle";
+import { FilterInvoiceAndAddInvoice } from "./FilterInvoiceAndAddInvoice";
+
+const InvoiceComponentHeader: FC = () => {
     return (
-        <div className={'flex justify-between items-center mb-[65px]'}>
+        <div className={style.InvoiceComponentHeader}>
             <InvoiceHeaderTitle />
-            <InvoiceFilterAndAddInvoice />
+            <FilterInvoiceAndAddInvoice />
         </div>
     );
 };

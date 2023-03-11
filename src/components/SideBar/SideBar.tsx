@@ -1,9 +1,12 @@
-import { SidebarLogo } from "./SidebarLogo/SidebarLogo";
-import { SidebarThemeSwitcherAndUserIcon } from "./SidebarThemeSwitcherAndUserIcon/SidebarThemeSwitcherAndUserIcon";
+import { FC } from "react";
 
-const SideBar = () => {
+import style from './SideBar.module.scss';
+import { SidebarLogo } from "./SidebarLogo";
+import { SidebarThemeSwitcherAndUserIcon } from "./SidebarThemeSwitcherAndUserIcon";
+
+const SideBar: FC = () => {
     return (
-        <div className={'h-screen flex flex-col justify-between al bg-oxford-blue overflow-hidden rounded-r-[20px] relative z-[1]'}>
+        <div className={style.SideBar}>
             <SidebarLogo />
             <SidebarThemeSwitcherAndUserIcon />
         </div>

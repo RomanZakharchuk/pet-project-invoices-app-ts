@@ -1,0 +1,28 @@
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+@use "src/scss/colors";
+
+.Label {
+  display: inline-block;
+  @include fontWight.medium();
+  @include fontSize.text();
+  color: colors.$ship-cove;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.Input {
+  width: 100%;
+  border: 1px solid colors.$selago;
+  border-radius: 4px;
+  padding: 16px 20px;
+
+  @include fontWight.bold();
+  @include fontSize.text();
+  color: colors.$vulcan;
+  outline: none;
+
+  &:focus {
+    background: colors.$cornflower-blue;
+  }
+}

@@ -1,0 +1,15 @@
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+@use "src/scss/colors";
+
+.Title {
+  @include fontWight.bold();
+  @include fontSize.h1();
+  color: colors.$vulcan;
+}
+
+.NumberOfInvoices {
+  @include fontWight.medium();
+  @include fontSize.text();
+  color: colors.$bali-hai;
+}

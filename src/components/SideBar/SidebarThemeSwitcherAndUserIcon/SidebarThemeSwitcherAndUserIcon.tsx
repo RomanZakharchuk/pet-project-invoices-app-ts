@@ -1,14 +1,32 @@
-import { ThemeDarkSvg } from "../../../svg-components";
+import { FC, useState } from "react";
 
-const SidebarThemeSwitcherAndUserIcon = () => {
+import style from './SidebarThemeSwitcherAndUserIcon.module.scss';
+import { ThemeDarkSvg } from "../../icons";
+import { useAuth } from "../../../hooks/useAuth";
+
+const SidebarThemeSwitcherAndUserIcon: FC = () => {
+    const { logOut } = useAuth();
+
     return (
         <div>
-            <div className={'w-full h-[103px] flex justify-center items-center'}>
-                <ThemeDarkSvg />
+            {localStorage.getItem('token') && (
+                <div className={style.WrapperBtn}>
+                    <button
+                        onClick={() => logOut()}
+                        className={style.BtnLogOut}>
+                        Log out
+                    </button>
+                </div>
+            )}
+
+            <div className={style.SwitchThemeBlock}>
+                <button className={style.Switch} type={'button'}>
+                    <ThemeDarkSvg />
+                </button>
             </div>
-            <div className={'w-full h-[1px] bg-fiord'}></div>
-            <div className={'w-full h-[103px] flex justify-center items-center'}>
-                <div className={'w-[40px] h-[40px] rounded-[100%] bg-selago overflow-hidden'}></div>
+            <div className={style.Line}></div>
+            <div className={style.AvatarBlock}>
+                <div></div>
             </div>
         </div>
     );

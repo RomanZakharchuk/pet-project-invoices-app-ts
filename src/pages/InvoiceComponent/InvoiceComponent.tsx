@@ -1,8 +1,12 @@
-import { InvoiceComponentHeader, Invoices } from "../../components";
+import { FC } from "react";
 
-const InvoiceComponent = () => {
+import style from './InvoiceComponent.module.scss';
+import { InvoiceComponentHeader } from "../../components/InvoiceComponentHeader";
+import { Invoices } from "../../components/Invoices";
+
+const InvoiceComponent: FC = () => {
     return (
-        <div className={'mt-[74px]'}>
+        <div className={style.InvoiceComponent}>
             <InvoiceComponentHeader />
             <Invoices />
         </div>

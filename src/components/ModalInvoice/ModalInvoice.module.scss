@@ -1,0 +1,39 @@
+@use "src/scss/colors";
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+
+.ModalInvoice {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background: black;
+  }
+}
+
+.ModalInvoiceInner {
+  width: 719px;
+  height: 100%;
+  background: colors.$alabaster;
+  position: relative;
+  z-index: 1;
+  outline: hidden;
+  border-radius: 20px;
+  padding: 56px 159px 56px 56px;
+}
+
+.Title {
+  @include fontWight.bold();
+  @include fontSize.h2Big();
+  color: colors.$vulcan;
+  padding-bottom: 48px;
+}

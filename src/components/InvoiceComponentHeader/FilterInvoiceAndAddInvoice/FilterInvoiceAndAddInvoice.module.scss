@@ -1,0 +1,45 @@
+@use "src/scss/btn";
+@use "src/scss/colors";
+@use "src/scss/fontWight";
+@use "src/scss/fontSize";
+
+.InvoiceFilterAndAddInvoice {
+  display: flex;
+  align-items: center;
+}
+
+.InvoiceFilterBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+
+  span {
+    @include fontWight.bold();
+    @include fontSize.text();
+    color: colors.$vulcan;
+    margin-right: 16px;
+  }
+}
+
+.Btn {
+  @include btn.btn();
+  background: colors.$cornflower-blue;
+  padding-left: 56px;
+  color: colors.$white;
+  position: relative;
+  transition: all 1.75ms ease-in-out;
+
+  &:hover {
+    background: colors.$heliotrope;
+    transition: all 1.75ms ease-in-out;
+  }
+}
+
+.PlusSvg {
+  position: absolute;
+  top: 9px;
+  left: 8px;
+}

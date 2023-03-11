@@ -1,0 +1,20 @@
+@use "../../scss/fontWight";
+@use "../../scss/fontSize";
+@use "../../scss/colors";
+@use "../../scss/boxShadow";
+
+.Form {
+  width: 345px;
+  height: auto;
+  background: colors.$white;
+  border-radius: 8px;
+  padding: 24px;
+  @include boxShadow.boxShadow();
+}
+
+.EmailWrapper,
+.PasswordWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
